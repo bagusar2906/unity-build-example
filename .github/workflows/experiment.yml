@@ -20,7 +20,7 @@ jobs:
           # Latest patch versions as json array of strings.
           VERSIONS=`npx unity-changeset list --versions --latest-patch --json --min 2019.3`
           echo "Versions: $VERSIONS"
-          echo "::set-output name=versions::$VERSIONS"
+       #   echo "::set-output name=versions::$VERSIONS"
 
   build:
     name: ${{ matrix.unityVersion }} ${{ matrix.targetPlatform }} ${{ matrix.projectPath }} 🚀
